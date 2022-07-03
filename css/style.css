@@ -1,0 +1,272 @@
+:root {
+    --body-bg: #fafafa;
+    --body-color: #222;
+    --cor-fundo: #bbbbbb; 
+    --cor-fundo-hover: rgb(122, 122, 122);
+    --cor-letra: #0025fa;
+    --cor-letra-hover: #2e4dfa;
+    --cor-font: rgb(0, 0, 0);
+    --menu-size: 250px;
+}
+
+.modo-escuro:root {
+    --body-bg: #181a1b;
+    --body-color: rgb(255, 255, 255);
+}
+
+body {
+    background-color: var(--body-bg);
+    color: var(--body-color);
+}
+
+header{
+    background-color: var(--cor-fundo);
+    width: 100%;
+    height: 10vw;
+    transition: 1s;
+}
+
+header:hover{
+    background:linear-gradient(90deg, white, rgb(70, 70, 70));
+}
+
+.logo{
+    margin: 5px;
+    margin-top: 5px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 33px;
+    right: 150;
+    transition: 0.5s;
+}
+
+.logo:hover{
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+nav{
+    position: absolute;
+    top: 100px;
+    right: 1090px;
+}
+
+nav li{
+    display: inline-block;
+    margin-top: 5px;
+    margin: 5px;
+}
+
+nav a{
+    font-size: 20px;
+    color: var(--cor-letra);
+}
+
+nav a:hover{
+    color: var(--cor-letra-hover);
+}
+
+.modoescuro{
+    font-size: 20px;
+    margin: 0 0 0 15px;
+    top: 105px;
+    right: 10px;
+    position: absolute;
+}
+
+.modoescuro:hover{
+    color: var(--cor-letra);
+}
+
+#sobre{
+    max-width: 500px;
+	margin: 60px auto 120px auto;
+	padding: 20px;
+    transition: 0.5s;
+}
+
+
+#sobre{
+    font-size: 1.5em;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.curiosidades{
+    font-size: 18px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    max-width: 550px;
+	margin: 60px auto 120px auto;
+	border: 1px solid rgba(0,0,0,.1);
+	padding: 20px;
+	box-shadow: 0 5px 8px -5px rgba(0,0,0,.2);
+    background-color: var(--cor-fundo);
+    transition: 0.5s;
+}
+
+.curiosidades:hover{
+    border-radius: 10px;
+    background-color: var(--cor-fundo-hover);
+}
+
+.curiosidades p{
+    padding: 10px;
+}
+
+.curiosidades p a{
+    color:var(--cor-letra);
+}
+
+.curiosidades p a:hover{
+    color: var(--cor-letra-hover);
+}
+
+footer{
+    text-align: center;
+    padding: 40px 0;
+    width: 100%;
+    height: 20vw;
+    background-color: var(--cor-fundo);
+    transition: 0.5s;
+}
+
+footer:hover{
+    background:linear-gradient(90deg, white, rgb(70, 70, 70));
+}
+
+footer p{
+    padding: 50px;
+    font-size: 20px;
+    color: var(--cor-font);
+}
+
+footer p a{
+    color: var(--cor-letra);
+    font-size: 20px;
+}
+
+footer p a:hover{
+    color: var(--cor-letra-hover);
+}
+
+#voltar-topo {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 5px;
+    cursor:pointer;
+    background-color: var(--cor-fundo);
+    transition: 0.5s;
+  }
+
+#voltar-topo:hover{
+    background-color: var(--cor-fundo-hover);
+    border-radius: 10px;
+}
+
+.cientistas{
+    display: list-item;
+    list-style-type: none;   
+    transition: 0.5s; 
+   } 
+ 
+.titulo {
+     font-size: 2em;
+     margin-bottom: 20px;
+     padding-bottom: 10px;
+     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+     color: var(--cor-letra);
+ }
+ 
+.titulo p {
+     margin-bottom: 1em;
+     font-size: 10px;
+     line-height: 1.9;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: var(--cor-font);
+ }
+ 
+.cientistas{
+     max-width: 550px;
+     margin: 60px auto 120px auto;
+     border: 1px solid rgba(0,0,0,.1);
+     padding: 20px;
+     box-shadow: 0 5px 8px -5px rgba(0,0,0,.2);
+ }
+ .cientistas p{
+    padding: 10px;
+ }
+ 
+ .cientistas:hover{
+    border-radius: 10px;
+    background-color: var(--cor-fundo-hover);
+ }
+
+ .foto{
+    transition: 0.5s;
+ }
+
+.foto:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+@media screen and (max-width: 490px) {
+    header{
+        width: 100vw;
+        height: 30vw;
+    }
+    .logo{
+        display: flex;
+        margin: 5px;
+        margin-top: 5px;
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        top: 10px;
+        right: 150;
+    }
+    .modoescuro{
+        font-size: 15px;
+        margin: 0 0 0 15px;
+        top: 90px;
+        right: 150px;
+        position: absolute;
+
+    }
+
+    .cientistas{
+        width: 100%;
+        height: 100%;
+        margin: 60px auto 120px auto;
+        border: 1px solid rgba(0,0,0,.1);
+        padding: 10px;
+        box-shadow: 0 5px 8px -5px rgba(0,0,0,.2);
+    }
+    .cientistas p{
+       padding: 10px;
+    }
+
+    .foto{
+        width: 100%;
+
+    }
+
+    footer{
+        text-align: center;
+        padding: 40px 0;
+        width: 100%;
+        height: 70vw;
+        background-color: var(--cor-fundo);
+        transition: 0.5s;
+    }
+    
+
+}
